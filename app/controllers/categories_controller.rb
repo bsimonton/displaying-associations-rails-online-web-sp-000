@@ -22,7 +22,7 @@ class CategoriesController < ApplicationController
 
   def update
     category = Category.find(params[:id])
-    category.update(params.(:category))
+    category.update(params(:category))
     redirect_to category_path(category)
   end
 end
